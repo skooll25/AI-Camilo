@@ -79,10 +79,9 @@ def list_reminders():
 def check_reminders():
     return jsonify(assistant.check_reminders())
 
-if __name__ == '__main__':if __name__ == '__main__':
-    import os
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host='0.0.0.0', port=port)
-    app.run(debug=True)
+if __name__ == '__main__':
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host='0.0.0.0', port=port)   
+
 
 
